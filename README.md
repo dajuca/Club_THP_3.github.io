@@ -1,29 +1,22 @@
-# Testing on Rails
+README
+This README would normally document whatever steps are necessary to get the application up and running.
 
-Des tests en série, pétages de câble absolus au codage...
+Things you may want to cover:
 
-## Prérequis
+Ruby version
 
-Ruby Version : 2.5.1
+System dependencies
 
-Rails Version : 5.2.0
+Configuration
 
-pg-1.1.3.gem
+Database creation
 
-## Déploiement en local
+Database initialization
 
-``git clone``
+How to run the test suite
 
-```cd THP_Testing_Rails```
+Services (job queues, cache servers, search engines, etc.)
 
-```rails db:create```
+Deployment instructions
 
-```rails db:migrate```
-
-```rails db:seed```
-
-```rails test```
-
-
-
-
+...
