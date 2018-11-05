@@ -1,0 +1,19 @@
+<h1>Se connecter</h1>
+<br>
+<% if flash.to_h.has_key?('flash') or flash.to_h.has_key?('danger') %>
+  <div class="alert alert-danger" role="alert">
+  <%= flash[:flash] %>
+  <%= flash[:danger] %>
+</div>
+<% else end %>
+<%= form_for(:session, url: login_path) do |f| %>
+  <%= f.label :Email %>
+  <%= f.email_field :email, class: 'form-control' %>
+  <br>
+  <br>
+  <%= f.label :Password %>
+  <%= f.password_field :password, class: 'form-control' %>
+  <br>
+  <br>
+  <%= f.submit "Log in", class: "btn btn-primary" %>
+<% end %>

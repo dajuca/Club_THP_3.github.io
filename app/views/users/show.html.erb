@@ -1,0 +1,12 @@
+<p>Prénom  : <%= @user.first_name %></p>
+<br>
+<br>
+<p>Nom : <%= @user.last_name %></p>
+<br>
+<br>
+<p>Email : <%= @user.email %></p>
+<br>
+<%= link_to "Editer mon compte", edit_user_path, class: "btn btn-primary" %>
+<br>
+<br>
+<%= link_to "Supprimer mon compte", @user, class: "btn btn-primary", method: :delete %>
