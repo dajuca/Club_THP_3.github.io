@@ -8,7 +8,7 @@ class StaticPagesController < ApplicationController
       # then stay on secret_page
     else
       # else redictiion to the login page with a beautiful flash
-      redirect_to "/login", flash: { flash: "hey login-toi pour y accéder" }
+      redirect_to "/login", flash: { flash: "Svp log_in" }
     end
   end
 

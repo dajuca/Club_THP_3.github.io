@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     if @user.save
       # Handle a successful save.
       redirect_to("/users/" + @user.id.to_s)
-      flash[:success] = "Profil utilisateur créé"
+      flash[:success] = "Votre profil a été crée"
       log_in(@user)
     else
       flash[:danger] = "bug"
